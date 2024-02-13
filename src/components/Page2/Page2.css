@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.page-container {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+ 
+  font-family: 'Open Sans', sans-serif; 
+}
+
+/* Styles for the heading container */
+.heading-container {
+  text-align: center;
+  margin-top: 50px; /* Adjust margin as needed */
+}
+
+/* Styles for the heading */
+.heading {
+  font-size: 26px; /* Adjust font size as needed */
+  color: #333; /* Dark grey color for the text */
+  font-weight: bold; /* Make the text bold */
+  line-height: 1.5; /* Adjust line height for better readability */
+  width: 100%;
+}
+
+
+
+.line.line1 {
+  color: #022657; /* Blue color for the first line */
+}
+
+.line.line2 {
+  color: #34a853; /* Green color for the second line */
+}
+
+.line.line3 {
+  color: #ff8800; /* Orange color for the third line */
+}
+
+/* Animation for text shadow */
+.heading:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow on hover */
+  transition: text-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+}
+
+
+.feature-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 8%;
+  margin-left: 25%;
+  border-radius: 10px; /* Optional: adds rounded corners to the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow to the image */
+}
+/* ... existing styles ... */
+
+.button-container {
+  text-align: left; /* Aligns the button to the left */
+}
+
+.grab-now-button {
+  font-size: 1rem; /* Adjust the size as needed */
+  padding: 10px 20px;
+  background-color: black; /* Light blue background */
+  color:white; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  outline: none; /* Removes the outline to make it look cleaner */
+  margin-top: 20px;
+}
+
+.grab-now-button:hover {
+  background-color: black; /* Slightly darker shade on hover */
+}
+
+/* ... existing styles ... */

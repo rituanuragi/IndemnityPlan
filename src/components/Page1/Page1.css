@@ -1,0 +1,158 @@
+
+/* Base setup */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f0f4f8; /* Soft background color */
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px; /* Adjust padding to give more space around elements */
+  background-color: #c3e0e5; /* Light grey background for more airiness */
+}
+
+/* Image section styles */
+.image-section {
+  width: 80%; /* Adjust width to give more space to the image and benefits */
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 600px; /* Adjust max-width to fit your design */
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 1.5em; /* Adjust font size to match the design */
+  color: #333; /* Dark grey color for the title */
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1em;
+  color: #666; /* Lighter color for subtitles */
+  margin-bottom: 20px;
+}
+
+/* Benefits section styles */
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjusted to manage spacing */
+  align-items: center;
+  padding: 20px;
+  /* Green background color */
+}
+
+/* Feature card styles */
+.feature-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  width: calc(50% - 20px); /* Adjust width to fit 2 cards per row, accounting for margin */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Checkmark styles */
+.checkmark {
+  margin-right: 10px;
+}
+
+/* Feature text styles */
+.feature-text {
+  color: #333333;
+  font-size: 16px;
+}
+
+/* Form section styles */
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form container styles */
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px; /* Adjust based on preference */
+  background-color: #cccccc; /* Light grey background color */
+}
+
+/* Form heading styles */
+.form-container h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 0.5em;
+  text-align: center; /* Center align the heading */
+}
+
+.form-container h2 {
+  color: black; /* Blue color for engagement */
+  font-size: 20px;
+  margin-bottom: 1.5em;
+  text-align: center; /* Center align the subtitle */
+}
+
+/* Form input styles */
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px; /* Space between inputs */
+  border-radius: 5px;
+  background-color: #fafafa; /* Slightly off-white for easy identification */
+}
+
+/* Form button styles */
+form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Vibrant blue for visibility */
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3; /* Slightly darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .benefits {
+    flex-direction: column;
+  }
+
+  .feature-card {
+    width: auto; /* Allows the card to expand to full container width on smaller screens */
+  }
+
+  .image-section, .form-section {
+    width: 100%;
+  }
+}

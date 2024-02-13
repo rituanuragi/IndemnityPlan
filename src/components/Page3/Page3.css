@@ -1,0 +1,19 @@
+.page-container1 {
+  text-align: center;
+  padding: 20px;
+max-width: 100%;
+background-color: white;
+}
+
+.heading2 {
+  font-size: 2rem; /* Adjust the font size as needed */
+  color: #333; /* Adjust the color as needed */
+  margin-bottom: 20px; /* Space between the heading and the image */
+  /* Add any additional styling for your heading */
+}
+
+.feature-image1 {
+  max-width: 100%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+  /* Add any additional styling for your image */
+}

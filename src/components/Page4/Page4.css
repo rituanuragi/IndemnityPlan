@@ -1,0 +1,143 @@
+
+.credit-flex {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+ 
+  font-family: 'Open Sans', sans-serif; 
+}
+
+/* Styling for section titles */
+.credit-flex h2 {
+  color: #005a8d; /* Dark blue that is commonly used in healthcare-related UIs */
+  margin-bottom: 20px;
+  font-size: 24px; 
+}
+.highlight1 {
+  color: #2c3e50; /* Dark shade for contrast and professional look */
+  font-size: 1.25rem; /* Slightly larger than normal text for emphasis */
+  font-weight: 600; /* Semi-bold for clear readability */
+  margin-bottom: 0.75rem; /* Space between the heading and list */
+  padding-bottom: 0.25rem; /* Padding for visual space */
+  border-bottom: 2px solid #3498db; /* Underline for importance, use a color that matches your brand */
+}
+/* CSS */
+.highlight2 {
+  list-style-type: none; /* Removes default list bullets */
+  padding: 0;
+  margin: 0; /* Adjust margin and padding as needed */
+  line-height: 1.6; /* Adjusts the spacing between lines of text for better readability */
+  max-width: 600px; /* Sets a max-width for the list for better readability */
+}
+
+.highlight2 li {
+  padding: 10px 0; /* Adds padding above and below each list item */
+  margin-left: 20px; /* Provides space for custom bullets */
+  position: relative; /* Needed for absolute positioning of custom bullet */
+  font-size: 16px; /* Adjusts the font size */
+  color: #333; /* Sets the text color */
+  background: #f9f9f9; /* Optional: sets a background color for each list item */
+  border-left: 3px solid #007bff; /* Adds a vertical bar to the left of each item */
+  margin-bottom: 15px; /* Adds spacing between list items */
+}
+
+.highlight2 li::before {
+  content: ''; /* Empty string if using a background image or CSS shape */
+  background-color: #007bff; /* Bullet point color */
+  width: 8px; /* Size of the bullet */
+  height: 8px; /* Size of the bullet */
+  border-radius: 50%; /* Makes the bullet round */
+  position: absolute; /* Absolute position */
+  left: -20px; /* Aligns bullet to the left of the text */
+  top: calc(50% - 4px); /* Centers the bullet vertically */
+}
+
+/* Flex containers for content alignment */
+.credit-flex-content1, .credit-flex-content3 {
+  display: flex;
+  justify-content: space-around; /* Space content evenly */
+  align-items: center; /* Vertically center items */
+  margin-top: 20px;
+ 
+}
+
+.credit-flex-leftimage, .credit-flex-rightimage {
+  width: 50%;
+}
+
+/* Styling for subheadings */
+.credit-flex-leftimage h3, .credit-flex-rightimage h3 {
+  color: #003366;
+  font-size: 20px; /* Slightly larger for emphasis */
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: normal; /* Avoid bold headings */
+}
+
+/* List styling */
+.credit-flex-leftimage ul, .credit-flex-rightimage ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.credit-flex-leftimage ul li, .credit-flex-rightimage ul li {
+  padding-left: 1em;
+  margin-bottom: 10px;
+  position: relative;
+  line-height: 1.6; /* Improved readability */
+  text-indent: -1em; /* Align text with the bullet */
+}
+
+/* Custom bullet points with icons */
+.credit-flex-leftimage ul li::before, .credit-flex-rightimage ul li::before {
+  content: url('data:image/svg+xml;base64,...'); /* Add base64 encoded SVG icon */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Image styling */
+.credit-flex-leftimage img, .credit-flex-rightimage img {
+  max-width: 50%; /* Smaller image size */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center image horizontally */
+  margin-bottom: 20px; /* Space below the image */
+  border-radius: 4px; /* Rounded corners for images */
+}
+
+/* Adjusting the left image container to align text and image properly */
+.credit-flex-leftimage {
+  text-align: left; /* Aligns text to the left */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center; /* Centers items vertically */
+  align-items: center; /* Centers items horizontally */
+}
+
+/* Adjusting the right image container to align text and image properly */
+.credit-flex-rightimage {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adding a hover effect for images */
+.credit-flex-leftimage img:hover, .credit-flex-rightimage img:hover {
+  transform: scale(1.03); /* Slight zoom effect */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+  .credit-flex {
+    padding: 10px;
+  }
+
+  .credit-flex-content1, .credit-flex-content3 {
+    margin-left: 0;
+  }
